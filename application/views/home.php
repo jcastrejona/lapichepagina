@@ -10,11 +10,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="../../css/normalize.css">
-        <link rel="stylesheet" href="../../css/main.css">
-		<link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="<?= base_url() ?>ctin/css/normalize.css">
+        <link rel="stylesheet" href="<?= base_url() ?>ctin/css/main.css">
+		<link rel="stylesheet" href="<?= base_url() ?>ctin/css/style.css">
 
-        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        <script src="<?= base_url() ?>ctin/js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -36,11 +36,11 @@
 			</div>
 		</div>
 
-		<script src="../../js/vendor/jquery-1.8.0.min.js"></script>
-		<script src="../../js/vendor/jquery.localscroll-1.2.7-min.js.txt"></script>
-		<script src="../../js/vendor/jquery.scrollTo-1.4.3.1-min.js.txt"></script>
-		<script src="../../js/vendor/circleMenu.js"></script>
-		<script src="../../js/plugins.js"></script>
-		<script src="../../js/mainhome.js"></script>
+		<script src="<?= base_url() ?>ctin/js/vendor/jquery-1.8.0.min.js"></script>
+		<script src="<?= base_url() ?>ctin/js/vendor/jquery.localscroll-1.2.7-min.js.txt"></script>
+		<script src="<?= base_url() ?>ctin/js/vendor/jquery.scrollTo-1.4.3.1-min.js.txt"></script>
+		<script src="<?= base_url() ?>ctin/js/vendor/circleMenu.js"></script>
+		<script src="<?= base_url() ?>ctin/js/plugins.js"></script>
+		<script src="<?= base_url() ?>ctin/js/mainhome.js"></script>
 	</body>
 </html>
