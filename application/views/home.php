@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="<?= base_url() ?>ctin/css/main.css">
 		<link rel="stylesheet" href="<?= base_url() ?>ctin/css/style.css">
 
-        <script src="<?= site_url() ?>ctin/js/vendor/modernizr-2.6.1.min.js"></script>
+        <script src="<?= base_url() ?>ctin/js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
