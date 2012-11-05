@@ -34,14 +34,6 @@
 					<li class="menu"><a id="m5" href="#media">Medios</a></li>
 				</ul>
 			</div>
-
-			<div id="convocatoria">
-				Hola mundo
-			</div>
-
-			<div class="equipo">
-				
-			</div>
 		</div>
 
 		<script src="../../js/vendor/jquery-1.8.0.min.js"></script>

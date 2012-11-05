@@ -1,17 +1,12 @@
 $(document).ready(function(){
-	
 	$("#circle-menu").localScroll();
 	
 	drawcircle()
 	hidecircle()
 	
-	$("#circle-menu").mouseover(function(){
-		$(".menu").fadeIn("slow")
-	})
-	
 	$(".menu").click(function(){
 		setInterval(align,1)
-		hidecircle()
+		setInterval(hidecircle,1)
 	})
 })
 
@@ -48,4 +43,7 @@ function align(){
 
 function hidecircle(){
 	$(".menu").hide()
+	$("#circle-menu").mouseover(function(){
+		$(".menu").fadeIn("slow")
+	})
 }
