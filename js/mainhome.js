@@ -16,13 +16,13 @@ function drawcircle(){
 		circle_radius: 200,
 		direction: 'full',
 		trigger:'hover',
-		//step_in: 100, 
-		//step_out: 100,
+		step_in: 50, 
+		step_out: 50,
 		close: function(){
-			$(".menu").fadeOut(200)
+			$(".menu").hide(200)
 		},
 		open: function(){
-			$("#circle-menu .menu").fadeIn(500)
+			$("#circle-menu .menu").show(500)
 		}
 	})
 	align()
@@ -44,6 +44,6 @@ function align(){
 function hidecircle(){
 	$(".menu").hide()
 	$("#circle-menu").mouseover(function(){
-		$(".menu").fadeIn("slow")
+		$(".menu").show()
 	})
 }

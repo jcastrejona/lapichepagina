@@ -30,8 +30,8 @@
 					<li class="menu"><a id="m1" href="#convocatoria">Convocatoria</a></li>
 					<li class="menu"><a id="m2" href="#equipo">Equipo</a></li>
 					<li class="menu"><a id="m3" href="#proyectos">Proyectos</a></li>
-					<li class="menu"><a id="m4" href="#matadero">El matadero</a></li>
-					<li class="menu"><a id="m5" href="#media">Medios</a></li>
+					<li class="menu"><a id="m4" href="<?= base_url() ?>ctin/index.php/matadero/index">El matadero</a></li>
+					<li class="menu"><a id="m5" href="#">Medios</a></li>
 				</ul>
 			</div>
 		</div>
