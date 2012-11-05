@@ -16,8 +16,8 @@ function drawcircle(){
 		circle_radius: 200,
 		direction: 'full',
 		trigger:'hover',
-		step_in: 100, 
-		step_out: 100,
+		//step_in: 100, 
+		//step_out: 100,
 		close: function(){
 			$(".menu").fadeOut(200)
 		},
