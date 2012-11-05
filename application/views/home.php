@@ -26,7 +26,7 @@
 		<div class="contenedor">
 			<div class="contenedor-body">
 				<ul id="circle-menu">
-					<li class="logo"><a href="<?= base_url() ?>index.php/welcome/testing"><img src="<?= base_url() ?>img/logo.png"></a></li>
+					<li class="logo"><a href="<?= base_url() ?>/welcome/testing"><img src="<?= base_url() ?>img/logo.png"></a></li>
 					<li class="menu"><a id="m1" href="#convocatoria">Convocatoria</a></li>
 					<li class="menu"><a id="m2" href="#equipo">Equipo</a></li>
 					<li class="menu"><a id="m3" href="#proyectos">Proyectos</a></li>
