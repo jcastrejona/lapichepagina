@@ -24,13 +24,18 @@ class Welcome extends CI_Controller {
         $this->load->helper('url');
         $this->load->view('home');
     }
+
     public function testing() {
         $this->load->view('Trolling');
     }
-	
-	public function matadero(){
-		$this->load->view('matadero_view');
-	}
+    public function integrantes(){
+        $this->load->model('users_model');
+        $data= $this->users_model->guinfo();
+        $this->load->view('integrantes_view',$data);
+    }
+    public function matadero() {
+        $this->load->view('matadero_view');
+    }
 
 }
 
