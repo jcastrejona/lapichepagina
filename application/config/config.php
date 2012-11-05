@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://ctintelmex.com/';
+$config['base_url']	= 'http://ctintelmex.com/ctin';
 
 /*
 |--------------------------------------------------------------------------
