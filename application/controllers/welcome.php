@@ -27,6 +27,10 @@ class Welcome extends CI_Controller {
     public function testing() {
         $this->load->view('Trolling');
     }
+	
+	public function matadero(){
+		$this->load->view('matadero_view');
+	}
 
 }
 

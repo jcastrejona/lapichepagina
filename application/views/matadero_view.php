@@ -10,12 +10,12 @@
 		<meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="<?=base_url()?>css/normalize.css">
+        <link rel="stylesheet" href="<?=base_url()?>css/main.css">
 
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-		<link rel="stylesheet" href="css/fonts.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/fonts.css">
 	</head>
 
 	<body>
@@ -23,7 +23,7 @@
 		<header>
 			<div id="cont">
 				<div id="ctin">
-					<a href="index.php">
+					<a href="<?=base_url()?>">
 						<br>
 					</a> 
 				</div>
@@ -61,7 +61,7 @@
 
 							<div class="offset1 span2 contain">
 								<div class="dude">
-									<img src="img/people/1.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/1.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -74,7 +74,7 @@
 
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="img/people/2.PNG" width="130">
+									<img src="<?=base_url()?>img/people/2.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -87,7 +87,7 @@
 
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="img/people/3.PNG" width="130">
+									<img src="<?=base_url()?>img/people/3.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -100,7 +100,7 @@
 
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="img/people/4.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/4.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -113,7 +113,7 @@
 
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="img/people/5.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/5.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -130,7 +130,7 @@
 
 							<div class="offset1 span2 contain">
 								<div class="dude">
-									<img src="img/people/6.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/6.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -143,7 +143,7 @@
 
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="img/people/7.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/7.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -156,7 +156,7 @@
 
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="img/people/8.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/8.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -169,7 +169,7 @@
 
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="img/people/9.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/9.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -181,7 +181,7 @@
 							</div>
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="img/people/10.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/10.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -197,8 +197,8 @@
 			</div>
 		</div>
 
-		<script src="js/vendor/jquery-1.8.0.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/main.js"></script>
+		<script src="<?= base_url() ?>js/vendor/jquery-1.8.0.min.js"></script>
+		<script src="<?= base_url() ?>js/plugins.js"></script>
+		<script src="<?= base_url() ?>js/main.js"></script>
 	</body>
 </html>
