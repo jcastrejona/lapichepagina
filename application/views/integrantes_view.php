@@ -1,5 +1,5 @@
 <?php
- foreach($data as $row):
-     echo $row['nombre']."<br>  ";
+ foreach($usuarios as $row):
+     echo $row['Nombre']."<br>  ";
  endforeach;
 ?>

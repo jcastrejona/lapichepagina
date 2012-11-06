@@ -3,7 +3,7 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Ctin extends CI_Controller {
 
     /**
      * Index Page for this controller.
@@ -30,7 +30,7 @@ class Welcome extends CI_Controller {
     }
     public function integrantes(){
         $this->load->model('users_model');
-        $data= $this->users_model->guinfo();
+        $data['usuarios']= $this->users_model->guinfo();
         $this->load->view('integrantes_view',$data);
     }
     public function matadero() {
