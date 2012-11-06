@@ -32,6 +32,26 @@ class entradas_model extends CI_Model {
         return $data;
         
     }
+    
+    function gauthor($id_au){
+        $this->db->where('Id_User',$id_au);
+        $query = $this->db->get('C2_Usuarios');
+        $row = $query->row();
+        if ($query->num_rows > 0) {
+        $data = array(
+            'aname' => $row->Nombre,
+            'auser' => $row->Username
+        );
+        }
+        else{
+            $data = array(
+                'aname'=>"",
+                'auser'=>"Ctin"
+            );
+        }
+        return $data;
+        
+    }
 
 }
 
