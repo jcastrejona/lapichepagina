@@ -10,8 +10,8 @@
 		<meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="<?=base_url()?>css/normalize.css">
-        <link rel="stylesheet" href="<?=base_url()?>css/main.css">
+        <link rel="stylesheet" href="<?= base_url() ?>css/normalize.css">
+        <link rel="stylesheet" href="<?= base_url() ?>css/main.css">
 
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/estilo.css">
@@ -23,7 +23,7 @@
 		<header>
 			<div id="cont">
 				<div id="ctin">
-					<a href="<?=base_url()?>">
+					<a href="<?= base_url() ?>">
 						<br>
 					</a> 
 				</div>
@@ -74,7 +74,7 @@
 
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="<?=base_url()?>img/people/2.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/2.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
@@ -87,7 +87,7 @@
 
 							<div class="span2 contain">
 								<div class="dude">
-									<img src="<?=base_url()?>img/people/3.PNG" width="130">
+									<img src="<?= base_url() ?>img/people/3.PNG" width="130">
 								</div>
 								<div class="inner">
 									<p class="lead">Nombre</p>
