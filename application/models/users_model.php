@@ -18,9 +18,13 @@ class users_model extends CI_Model {
 	}
 
 	function listainfo() {
-		$this->db->select('Nombre, Experto');
+		$this->db->select('Id_User, Nombre, Experto');
 		$query = $this->db->get('C2_Usuarios');
 		return $query->result_array();
+	}
+	
+	function insertmataderodata(){
+		
 	}
 
 }

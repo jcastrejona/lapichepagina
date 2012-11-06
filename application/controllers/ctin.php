@@ -56,6 +56,12 @@ class Ctin extends CI_Controller {
 		$data['usuarios'] = $this->users_model->listainfo();
 		$this->load->view('control_view', $data);
 	}
+	
+	public function setmatadero(){
+		//$this->load->model('users_model');
+		//$this->users_model->insertmataderodata();
+		$this->load->view('matadero_view');
+	}
 
 }
 

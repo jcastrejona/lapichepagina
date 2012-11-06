@@ -12,7 +12,6 @@
 
         <link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/normalize.css">
         <link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/main.css">
-
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>select/select2.css">
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/datepicker.css" >
@@ -41,35 +40,39 @@
 		<div class="container">
 			<div class="span12">
 				<h2>Panel de control matadero</h2>
-				<form action="<?= base_url() ?>index.php/ctin/register" method="post" class="form-horizontal">
+				<form action="<?= base_url() ?>index.php/ctin/setmatadero" method="post" class="form-horizontal" id="mataderoform">
 					<div class="control-group">
 						<label class="control-label" for="inputtitle">Titulo</label>
 						<div class="controls">
 							<input type="text" id="inputtitle" placeholder="titulo">
 						</div>
 					</div>
-					
+
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">Fecha del evento</label>
 						<div class="controls">
 							<input type="text" id="inputfecha">
 						</div>
 					</div>
-					
+
 					<div class="control-group">
+						<p id="mensajeerror" class="control-group">
+
+						</p>
 						<label class="control-label" for="participantes">Participantes</label>
 						<div id="list" class="controls">
 							<select id="e9" class="chosen span5" multiple="true" >
 								<?php
 								foreach ($usuarios as $row):
-									echo "<option>" . $row["Nombre"] . " - " . $row["Experto"] . "</option>";
+									$habilidad = ($row["Experto"] == NULL) ? "ND" : $row["Experto"];
+									echo "<option value='" . $row["Id_User"] . "'>" . $row["Nombre"] . " - " . $habilidad . "</option>";
 								endforeach;
 								?> 
 							</select>
-							
 						</div>
 					</div>
-					<button id="participantesbtn" type="submit" class="btn">Aceptar</button>
+
+					<a id="participantesbtn" class="btn">Aceptar</a>
 				</form>
 			</div>
 		</div>
@@ -79,10 +82,23 @@
 		<script src="<?= base_url() ?>/js/vendor/datepicker.js"></script>
 		<script src="<?= base_url() ?>/js/plugins.js"></script>
 		<script>
-			jQuery(document).ready(function(){
-				$("#e9").select2({maximumSelectionSize: 10});
+			$(document).ready(function(){
+				$("#e9").select2({
+					placeholder: "Busca por participantes o habilidad",
+					maximumSelectionSize: 10});
 				$("#inputfecha").datepicker();
-			});
+				
+				$("#participantesbtn").click(function(){
+					var array = $("#e9").select2("val")
+					if(array.length < 10){
+						$("#mensajeerror").html("Selecciona 10 usuarios")
+					}
+					else{
+						//alert("submit")
+						$("#mataderoform").submit()
+					}
+				})
+	});
 		</script>
 
 	</body>
