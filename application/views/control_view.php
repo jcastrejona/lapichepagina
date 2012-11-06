@@ -41,7 +41,7 @@
 		<div class="container">
 			<div class="span12">
 				<h2>Panel de control matadero</h2>
-				<form class="form-horizontal">
+				<form action="<?= base_url() ?>index.php/ctin/register" method="post" class="form-horizontal">
 					<div class="control-group">
 						<label class="control-label" for="inputtitle">Titulo</label>
 						<div class="controls">
