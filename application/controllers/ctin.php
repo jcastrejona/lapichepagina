@@ -44,6 +44,12 @@ class Ctin extends CI_Controller {
 	public function matadero() {
 		$this->load->view('matadero_view');
 	}
+        
+	public function blog() {
+		$this->load->model('entradas_model');
+		$data['entradas'] = $this->entradas_model->geinfo();
+		$this->load->view('entradas_view', $data);
+	}
 
 	public function controlparamario() {
 		$this->load->model('users_model');
