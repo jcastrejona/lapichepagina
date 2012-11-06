@@ -12,10 +12,16 @@
  */
 class users_model extends CI_Model {
 
-    function guinfo() {
-        $query = $this->db->get('C2_Usuarios');
-        return $query->result_array();
-    }
+	function guinfo() {
+		$query = $this->db->get('C2_Usuarios');
+		return $query->result_array();
+	}
+
+	function listainfo() {
+		$this->db->select('Nombre, Experto');
+		$query = $this->db->get('C2_Usuarios');
+		return $query->result_array();
+	}
 
 }
 

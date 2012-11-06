@@ -5,8 +5,8 @@ $(document).ready(function(){
 	hidecircle()
 	
 	$(".menu").click(function(){
-		setInterval(align,1)
-		setInterval(hidecircle,1)
+		//setInterval(align,1)
+		//setInterval(hidecircle,1)
 	})
 })
 
