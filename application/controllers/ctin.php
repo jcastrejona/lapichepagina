@@ -33,9 +33,13 @@ class Ctin extends CI_Controller {
         $data['usuarios']= $this->users_model->guinfo();
         $this->load->view('integrantes_view',$data);
     }
+    public function proyectos(){
+        $this->load->model('proyectos_model');
+        $data['proyectos']= $this->proyectos_model->gpinfo();
+        $this->load->view('proyectos_view',$data);
+    }
 	
-    public function matadero() {
-		
+    public function matadero() {	
         $this->load->view('matadero_view');
     }
 

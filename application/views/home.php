@@ -29,7 +29,7 @@
 					<li class="logo"><a href="<?= base_url() ?>index.php/ctin/testing"><img src="<?= base_url() ?>img/logo.png"></a></li>
 					<li class="menu"><a id="m1" href="#">Convocatoria</a></li>
 					<li class="menu"><a id="m2" href="<?= base_url() ?>index.php/ctin/integrantes">Equipo</a></li>
-					<li class="menu"><a id="m3" href="#proyectos">Proyectos</a></li>
+					<li class="menu"><a id="m3" href="<?= base_url() ?>index.php/ctin/proyectos">Proyectos</a></li>
 					<li class="menu"><a id="m4" href="<?= base_url() ?>index.php/ctin/matadero">El matadero</a></li>
 					<li class="menu"><a id="m5" href="#">Medios</a></li>
 				</ul>
