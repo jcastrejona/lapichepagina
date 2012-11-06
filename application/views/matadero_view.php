@@ -40,8 +40,15 @@
 						<h2>Roledom - plataforma experimental para desarrollar crónicas de juego de rol en línea.</h2>
 					</div>
 					<div class="span7">
-						<iframe src="https://www.ustream.tv/embed/10584536" width="550" height="335" scrolling="no" frameborder="0">
-						</iframe>
+						<div class="row">
+							<div class="span7">
+							<iframe src="https://www.ustream.tv/embed/10584536" width="550" height="335" scrolling="no" frameborder="0">
+							</iframe>
+							</div>
+							<div class="span7">
+								Fecha:
+							</div>
+						</div>
 						<br/>
 					</div>
 
@@ -49,6 +56,7 @@
 					<div class="span5">
 						<a class="twitter-timeline" data-dnt=true href="https://twitter.com/search?q=%23ctintelmex" data-widget-id="259349084916285440">Tweets sobre "#ctintelmex"</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 					</div>
 				</div>
