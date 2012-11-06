@@ -20,19 +20,6 @@
 
 	<body>
 
-		<header>
-			<div id="cont">
-				<div id="ctin">
-					<a href="<?= base_url() ?>">
-						<br>
-					</a> 
-				</div>
-			</div>
-			<div id="controles">
-
-			</div>
-		</header>
-
 		<div class="container">
 			<div id="video">
 				<div class="row">
@@ -46,7 +33,7 @@
 							</iframe>
 							</div>
 							<div class="span7">
-								Fecha:
+								<p class="lead">Fecha:</p>
 							</div>
 						</div>
 						<br/>
