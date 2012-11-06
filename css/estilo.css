@@ -142,7 +142,7 @@ h2{
 }
 
 #ctin{
-    background: url(../img/logo.png) no-repeat;
+    background: url(../img/logo_1.png) no-repeat;
     float: left;
     width: 173px;
     height: 80px;
@@ -414,5 +414,5 @@ lkasklaskldasldlaskdjlasd
 }
 
 iframe{
-	margin-top: -19px;
+	margin-top: 19px;
 }

@@ -10,14 +10,14 @@
 		<meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="../../css/normalize.css">
-        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="<?=base_url() ?>css/normalize.css">
+        <link rel="stylesheet" href="<?=base_url() ?>css/main.css">
 
-		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="../../select/select2.css">
-		<link rel="stylesheet" type="text/css" href="../../css/estilo.css">
-		<link rel="stylesheet" type="text/css" href="../../css/control.css">
-		<link rel="stylesheet" type="text/css" href="../../css/fonts.css" >
+		<link rel="stylesheet" type="text/css" href="<?=base_url() ?>css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="<?=base_url() ?>select/select2.css">
+		<link rel="stylesheet" type="text/css" href="<?=base_url() ?>css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="<?=base_url() ?>css/control.css">
+		<link rel="stylesheet" type="text/css" href="<?=base_url() ?>css/fonts.css" >
 	</head>
 
 	<body>
@@ -62,9 +62,9 @@
 			</div>
 		</div>
 
-		<script src="../../js/vendor/jquery-1.8.0.min.js"></script>
-		<script src="../../select/select2.min.js"></script>
-		<script src="../../js/plugins.js"></script>
+		<script src="<?=base_url() ?>/js/vendor/jquery-1.8.0.min.js"></script>
+		<script src="<?=base_url() ?>/select/select2.min.js"></script>
+		<script src="<?=base_url() ?>/js/plugins.js"></script>
 		<script>
 			jQuery(document).ready(function(){
 				makeInput()
