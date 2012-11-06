@@ -14,7 +14,7 @@ class users_model extends CI_Model {
 
     function guinfo() {
         $query = $this->db->get('C2_Usuarios');
-        return $query->result();
+        return $query->result_array();
     }
 
 }
