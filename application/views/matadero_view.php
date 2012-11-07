@@ -24,16 +24,26 @@
 			<div id="video">
 				<div class="row">
 					<div class="span12">
-						<h2>Roledom - plataforma experimental para desarrollar crónicas de juego de rol en línea.</h2>
+						<h2> 
+							<?php
+							//foreach ($matadero as $row):
+								echo "" . $matadero[0][0]["titulo"] . "";
+							//endforeach;
+							?>
+						</h2>
 					</div>
 					<div class="span7">
 						<div class="row">
 							<div class="span7">
-							<iframe src="https://www.ustream.tv/embed/10584536" width="550" height="335" scrolling="no" frameborder="0">
-							</iframe>
+								<iframe src="https://www.ustream.tv/embed/10584536" width="550" height="335" scrolling="no" frameborder="0">
+								</iframe>
 							</div>
 							<div class="span7">
-								<p class="lead">Fecha:</p>
+								<p class="lead">Fecha:<?php
+							//foreach ($matadero as $row):
+								echo " " . $matadero[0][0]["fecha"] . "";
+							//endforeach;
+							?></p>
 							</div>
 						</div>
 						<br/>

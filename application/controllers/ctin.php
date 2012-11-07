@@ -41,10 +41,13 @@ class Ctin extends CI_Controller {
 		$this->load->view('proyectos_view', $data);
 	}
 
+	//matadero
 	public function matadero() {
-		$this->load->view('matadero_view');
+		$this->load->model('users_model');
+		$data['matadero'] = $this->users_model->getDataMatadero();
+		$this->load->view('matadero_view', $data);
 	}
-        
+
 	public function blog() {
 		$this->load->model('entradas_model');
 		$data['entradas'] = $this->entradas_model->geinfo();
@@ -56,12 +59,14 @@ class Ctin extends CI_Controller {
 		$data['usuarios'] = $this->users_model->listainfo();
 		$this->load->view('control_view', $data);
 	}
-	
-	public function setmatadero(){
+
+	//maneja lo relacionado a la insercion de datos del matadero
+	public function setmatadero() {
 		$this->load->model('users_model');
 		$this->users_model->insertmataderodata();
 		$this->load->view('matadero_view');
 	}
+
 }
 
 /* End of file welcome.php */

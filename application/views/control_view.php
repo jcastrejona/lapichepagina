@@ -44,14 +44,14 @@
 					<div class="control-group">
 						<label class="control-label" for="inputtitle">Titulo</label>
 						<div class="controls">
-							<input type="text" id="inputtitle" placeholder="titulo">
+							<input type="text" id="inputtitle" placeholder="titulo" name="inputtitle">
 						</div>
 					</div>
 
 					<div class="control-group">
 						<label class="control-label" for="inputEmail">Fecha del evento</label>
 						<div class="controls">
-							<input type="text" id="inputfecha">
+							<input type="text" id="inputfecha" name="inputfecha">
 						</div>
 					</div>
 
@@ -76,7 +76,7 @@
 					<div class="control-group">
 						<label class="control-label"></label>
 						<div class="controls">
-							<input type="hidden" id="valuesusers" val="">
+							<input type="hidden" id="valuesusers" val="" name="valuesusers">
 						</div>
 					</div>
 
