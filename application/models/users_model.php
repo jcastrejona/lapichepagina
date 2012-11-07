@@ -64,29 +64,6 @@ class users_model extends CI_Model {
 	}
 	
 
-	function getDataMatadero() {
-
-		//sacamos el matadero
-		$matadero = $this->db->get_where('C2_Matadero', array('activo' => 1), 1);
-		//sacamos el id
-		foreach ($matadero->result() as $row) {
-			$idm = $row->id;
-		}
-		
-		//sacamos el id de usuarios que tienen ese id de matadero
-		$users = $this->db->get_where('C2_Matadero_has_usuarios', array('id_Matadero' => $idm));
-
-		//sacamos los datos de los usuarios
-		
-		
-		//guardamos todo
-		
-		$resultado = array();
-		$resultado[0] = $matadero->result_array();
-		$resultado[1] = $users->result_array();
-		return $resultado;
-	}
-
 }
 
 ?>
