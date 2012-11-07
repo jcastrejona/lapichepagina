@@ -58,11 +58,10 @@ class Ctin extends CI_Controller {
 	}
 	
 	public function setmatadero(){
-		//$this->load->model('users_model');
-		//$this->users_model->insertmataderodata();
+		$this->load->model('users_model');
+		$this->users_model->insertmataderodata();
 		$this->load->view('matadero_view');
 	}
-
 }
 
 /* End of file welcome.php */

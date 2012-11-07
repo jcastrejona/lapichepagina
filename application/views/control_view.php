@@ -61,6 +61,7 @@
 						</p>
 						<label class="control-label" for="participantes">Participantes</label>
 						<div id="list" class="controls">
+
 							<select id="e9" class="chosen span5" multiple="true" >
 								<?php
 								foreach ($usuarios as $row):
@@ -69,6 +70,13 @@
 								endforeach;
 								?> 
 							</select>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label"></label>
+						<div class="controls">
+							<input type="hidden" id="valuesusers" val="">
 						</div>
 					</div>
 
@@ -94,11 +102,11 @@
 						$("#mensajeerror").html("Selecciona 10 usuarios")
 					}
 					else{
-						//alert("submit")
+						$("#valuesusers").val($("#e9").select2("val"))
 						$("#mataderoform").submit()
 					}
 				})
-	});
+			});
 		</script>
 
 	</body>
