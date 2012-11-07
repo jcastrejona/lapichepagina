@@ -19,7 +19,6 @@
 	</head>
 
 	<body>
-
 		<div class="container">
 			<div id="video">
 				<div class="row">
@@ -27,7 +26,7 @@
 						<h2> 
 							<?php
 							//foreach ($matadero as $row):
-								echo "" . $matadero[0][0]["titulo"] . "";
+							echo "" . $matadero[0]["titulo"] . "";
 							//endforeach;
 							?>
 						</h2>
@@ -41,7 +40,7 @@
 							<div class="span7">
 								<p class="lead">Fecha:<?php
 							//foreach ($matadero as $row):
-								echo " " . $matadero[0][0]["fecha"] . "";
+							echo " " . $matadero[0]["fecha"] . "";
 							//endforeach;
 							?></p>
 							</div>
@@ -64,144 +63,32 @@
 						<div class="center"><h2>Participantes</h2></div>
 						<div class="row">
 
-							<div class="offset1 span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/1.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
+							<?php
+							$c = 0;
+							foreach ($user as $usuario):
+								if ($c == 0 || $c == 5)
+									echo '<div class="offset1 span2 contain">';
+								else
+									echo '<div class="span2 contain">';
+								echo '<div class="dude">';
+								echo '<img src="http://ctintelmex.com/' . $usuario['Foto'] . '">';
+								echo '</div>';
+								echo '<div class="inner">';
+								$nombre = explode(" ", $usuario["Nombre"]);
+								echo '<p><strong>' . $nombre[0] . '</strong></p>';
+								echo '<p>' . $usuario["Experto"] . '</p>';
+								echo "</div>";
+								echo '<div class="plop"></div>';
+								echo "</div>";
+								$c++;
+							endforeach;
+							?>
 
-								</div>
-							</div>
-
-							<div class="span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/2.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
-
-								</div>
-							</div>
-
-							<div class="span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/3.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
-
-								</div>
-							</div>
-
-							<div class="span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/4.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
-
-								</div>
-							</div>
-
-							<div class="span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/5.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
-
-								</div>
-							</div>
-
-						</div>
-
-						<div class="row">
-
-							<div class="offset1 span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/6.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
-
-								</div>
-							</div>
-
-							<div class="span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/7.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
-
-								</div>
-							</div>
-
-							<div class="span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/8.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
-
-								</div>
-							</div>
-
-							<div class="span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/9.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
-
-								</div>
-							</div>
-							<div class="span2 contain">
-								<div class="dude">
-									<img src="<?= base_url() ?>img/people/10.PNG" width="130">
-								</div>
-								<div class="inner">
-									<p class="lead">Nombre</p>
-									<p class="">Ocupacion</p>
-								</div>
-								<div class="plop">
-
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<script src="<?= base_url() ?>js/vendor/jquery-1.8.0.min.js"></script>
 		<script src="<?= base_url() ?>js/plugins.js"></script>
 		<script src="<?= base_url() ?>js/main.js"></script>

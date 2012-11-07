@@ -151,7 +151,7 @@ h2{
 
 #logoContainer{
     background: url(../img/sponsors.png) #aaa no-repeat 50%;
-    height: 75px;
+    height: 100px;
     margin: 0 auto;
     margin-top: 30px;
 
@@ -370,6 +370,7 @@ lkasklaskldasldlaskdjlasd
 }
 
 .contain{
+	height: 130px !important;
 	position: relative;
 }
 
