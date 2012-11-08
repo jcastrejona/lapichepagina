@@ -5,21 +5,6 @@ if (!defined('BASEPATH'))
 
 class Ctin extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 * 	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 * 	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
 	public function index() {
 		$this->load->helper('url');
 		$this->load->view('home');
@@ -66,6 +51,12 @@ class Ctin extends CI_Controller {
 		$this->load->model('matadero_model');
 		$this->matadero_model->insertmataderodata();
 		$this->load->view('matadero_view');
+	}
+
+	public function proyecto($id) {
+		$this->load->model('proyectos_model');
+		$query["proyecto"] = $this->proyectos_model->gsinglep($this->uri->segment(3));
+		$this->load->view('proyecto_view', $query);
 	}
 
 }

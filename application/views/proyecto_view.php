@@ -23,31 +23,20 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-			<div id="contenedor-global">
-				<?php
-				foreach ($proyectos as $row):
-					echo '<div class="contenedor-proyecto">';
-					echo anchor('ctin/proyecto/' . $row["ID_Proyecto"], img("http://ctintelmex.com/" . $row['Ruta_logo']));	
-					echo "<p class='lead'>" . $row['Titulo'];
-					echo '</div>';
-				endforeach;
-				?>
-			</div>
+		<div class="container">
+			<?php
+			echo "Nombre: " . $proyecto['ptitle'] . "<br>Resumen: " . $proyecto['pres'] . "<br>";
+			echo "Descripción: ". $proyecto["pcue"] . "<br>";
+			echo "Fecha: " . date('d-m-Y H:i:s', $proyecto['pfec']) . "<br>";
+			?>
+			<img src="http://ctintelmex.com/<?= $proyecto['plog'] ?>">
+			<?php
+			echo "<br>";
+			?>
+		</div>
 
 		<script src="<?= base_url() ?>js/vendor/jquery-1.8.0.min.js"></script>
 		<script src="<?= base_url() ?>js/vendor/masonry.min.js"></script>
 		<script src="<?= base_url() ?>js/plugins.js"></script>
-		<script>
-			$(document).ready(function(){
-				var $container = $('#contenedor-global')
-				$container.imagesLoaded(function(){
-					$container.masonry({
-						itemSelector : '.contenedor-proyecto',
-						isFitWidth: true
-					});
-				});
-			})
-
-		</script>
 	</body>
 </html>

@@ -17,8 +17,6 @@ class proyectos_model extends CI_Model {
         return $query->result_array();
     }
     
-    
-    
     function gsinglep($id_proy){
         $this->db->where('Id_Proyecto',$id_proy);
         $query = $this->db->get('C2_Proyectos');

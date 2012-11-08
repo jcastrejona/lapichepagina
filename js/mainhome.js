@@ -1,13 +1,24 @@
 $(document).ready(function(){
-	$("#circle-menu").localScroll();
-	
+	//$("#circle-menu").localScroll();
+	$(".menucircle")
 	drawcircle()
 	hidecircle()
 	
-	$(".menu").click(function(){
-		//setInterval(align,1)
-		//setInterval(hidecircle,1)
+	//$(".menu").click(function(){
+	//setInterval(align,1)
+	//setInterval(hidecircle,1)
+	//})
+	
+	$(".menu a").click(function(){
+		$("#circle-menu").fadeOut("fast")
 	})
+	
+	$(".menu").click(function(){
+		window.location=$(this).find("a").attr("href");
+		$("#circle-menu").fadeOut("fast")
+		return false;
+	})
+		
 })
 
 function drawcircle(){
@@ -25,6 +36,7 @@ function drawcircle(){
 			$("#circle-menu .menu").show(500)
 		}
 	})
+	
 	align()
 }
 
