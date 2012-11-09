@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/normalize.css">
         <link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/main.css">
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/bootstrap.css">
+		<link rel="stylesheet" href="<?= base_url() ?>font/stylesheet.css">
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>select/select2.css">
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/datepicker.css" >
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/estilo.css">
@@ -22,20 +23,9 @@
 
 	<body>
 
-		<header>
-
-			<div id="cont">
-				<div id="ctin">
-					<a href="index.php">
-						<br>
-					</a> 
-				</div>
-			</div>
-
-			<div id="controles">
-
-			</div>
-		</header>
+		<<?php
+			$this->load->view("header");
+		?>
 
 		<div class="container">
 			<div class="span12">

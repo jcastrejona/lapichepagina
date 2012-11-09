@@ -11,17 +11,23 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="<?= base_url() ?>css/normalize.css">
 		<link rel="stylesheet" href="<?= base_url() ?>css/bootstrap.css">
+		<link rel="stylesheet" href="<?= base_url() ?>font/stylesheet.css">
+		<link rel="stylesheet" href="<?= base_url() ?>css/integrantes.css">
 	</head>
 
 	<body>
-		<div class="container">
+		<?php
+			$this->load->view("header");
+		?>
+		
+		<div id="contenedorpin" class="container">
 			<div class="row">
 				<div class="span12">
-					<ul id="contenedor-desc" class="thumbnails">
+					<ul id="contenedor-main" class="thumbnails">
 						<?php
 						foreach ($usuarios as $row):
 							?>
-							<li class="span4">
+							<li class="contenedor-desc">
 								<div class="thumbnail">
 									<img src="http://ctintelmex.com/<?= $row['Foto'] ?>">
 									<h3>
@@ -45,9 +51,17 @@
 		</div>
 
 		<script src="<?= base_url() ?>js/vendor/jquery-1.8.0.min.js"></script>
-		<script type="text/javascript" src="<?= base_url() ?>js/vendor/equalize.min.js"></script>
-		<script type="text/javascript">
-			$("#contenedor-desc").equalize()
+		<script src="<?= base_url() ?>js/vendor/masonry.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var $container = $('#contenedorpin')
+				$container.imagesLoaded(function(){
+					$container.masonry({
+						itemSelector : '.contenedor-desc',
+						isFitWidth: true
+					});
+				});
+			})
 		</script>
 	</body>
 </html>

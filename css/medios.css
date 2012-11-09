@@ -1,20 +1,18 @@
-body{
-	background: #D0D0D0;
-}
-
 .contenedor-medio{
 	margin: 8px;
 	float: left;
 	width: 550px;
 	text-align: center;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
 }
 
 
 .contenedor-medio .thumbnail{
-	padding: 10px;
+	padding: 30px;
 	overflow-x: hidden;
 	background: #fcfcfc;
 }
+
 #contenedor-global{
 	margin: 0 auto;
 }

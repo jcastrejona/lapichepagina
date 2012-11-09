@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="<?= base_url() ?>css/normalize.css">
         <link rel="stylesheet" href="<?= base_url() ?>css/main.css">
 		<link rel="stylesheet" href="<?= base_url() ?>css/bootstrap.css">
+		<link rel="stylesheet" href="<?= base_url() ?>font/stylesheet.css">
 		<link rel="stylesheet" href="<?= base_url() ?>css/proyecto.css">
 		<style>
 			.hero-unit h3{
@@ -27,6 +28,11 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+		
+		<?php
+			$this->load->view("header");
+		?>
+		
 		<div class="container">
 			<div class="hero-unit">
 				<?php

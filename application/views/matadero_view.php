@@ -14,11 +14,16 @@
         <link rel="stylesheet" href="<?= base_url() ?>css/main.css">
 
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/bootstrap.css">
+		<link rel="stylesheet" href="<?= base_url() ?>font/stylesheet.css">
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/estilo.css">
 		<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/fonts.css">
 	</head>
 
 	<body>
+		<?php
+			$this->load->view("header");
+		?>
+		
 		<div class="container">
 			<div id="video">
 				<div class="row">

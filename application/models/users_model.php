@@ -14,6 +14,7 @@ class users_model extends CI_Model {
 
 	function guinfo() {
 		$query = $this->db->get('C2_Usuarios');
+		$this->db->limit(30);
 		return $query->result_array();
 	}
 

@@ -12,6 +12,7 @@
 
         <link rel="stylesheet" href="<?= base_url() ?>css/normalize.css">
         <link rel="stylesheet" href="<?= base_url() ?>css/main.css">
+		<link rel="stylesheet" href="<?= base_url() ?>font/stylesheet.css">
 		<link rel="stylesheet" href="<?= base_url() ?>css/style.css">
 
         <script src="<?= base_url() ?>js/vendor/modernizr-2.6.1.min.js"></script>
@@ -22,6 +23,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+		
 		<div id="fondo"></div>
 		<div class="contenedor">
 			<div class="contenedor-body">
@@ -31,8 +33,7 @@
 					<li class="menu"><a id="m2" href="<?= base_url() ?>index.php/ctin/integrantes">Equipo</a></li>
 					<li class="menu"><a id="m3" href="<?= base_url() ?>index.php/ctin/proyectos">Proyectos</a></li>
 					<li class="menu"><a id="m4" href="<?= base_url() ?>index.php/ctin/matadero">El matadero</a></li>
-					<li class="menu">
-						<a id="m5" href="<?= base_url() ?>index.php/ctin/blog">Medios</a></li>
+					<li class="menu"><a id="m5" href="<?= base_url() ?>index.php/ctin/blog">Medios</a></li>
 				</ul>
 			</div>
 		</div>

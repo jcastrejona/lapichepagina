@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="<?= base_url() ?>css/normalize.css">
         <link rel="stylesheet" href="<?= base_url() ?>css/main.css">
 		<link rel="stylesheet" href="<?= base_url() ?>css/bootstrap.css">
+		<link rel="stylesheet" href="<?= base_url() ?>font/stylesheet.css">
 		<link rel="stylesheet" href="<?= base_url() ?>css/proyecto.css">
 
         <script src="<?= base_url() ?>js/vendor/modernizr-2.6.1.min.js"></script>
@@ -23,16 +24,20 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-			<div id="contenedor-global">
-				<?php
-				foreach ($proyectos as $row):
-					echo '<div class="contenedor-proyecto">';
-					echo anchor('ctin/proyecto/' . $row["ID_Proyecto"], img("http://ctintelmex.com/" . $row['Ruta_logo']));	
-					echo "<p class='lead'>" . $row['Titulo'];
-					echo '</div>';
-				endforeach;
-				?>
-			</div>
+		<?php
+		$this->load->view("header");
+		?>
+
+		<div id="contenedor-global">
+			<?php
+			foreach ($proyectos as $row):
+				echo '<div class="contenedor-proyecto">';
+				echo anchor('ctin/proyecto/' . $row["ID_Proyecto"], img("http://ctintelmex.com/" . $row['Ruta_logo']));
+				echo "<p class='lead'>" . $row['Titulo'];
+				echo '</div>';
+			endforeach;
+			?>
+		</div>
 
 		<script src="<?= base_url() ?>js/vendor/jquery-1.8.0.min.js"></script>
 		<script src="<?= base_url() ?>js/vendor/masonry.min.js"></script>

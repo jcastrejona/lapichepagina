@@ -9,10 +9,10 @@
         <title>CTIN | Centro de Tecnologia e Innovacion</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
         <link rel="stylesheet" href="<?= base_url() ?>css/normalize.css">
         <link rel="stylesheet" href="<?= base_url() ?>css/main.css">
 		<link rel="stylesheet" href="<?= base_url() ?>css/bootstrap.css">
+		<link rel="stylesheet" href="<?= base_url() ?>font/stylesheet.css">
 		<link rel="stylesheet" href="<?= base_url() ?>css/medios.css">
 
         <script src="<?= base_url() ?>js/vendor/modernizr-2.6.1.min.js"></script>
@@ -23,6 +23,11 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+		
+		<?php
+			$this->load->view("header");
+		?>
+		
 		<div id="contenedor-global" class="container">
 			<ul class="thumbnails">
 				<?php
