@@ -13,36 +13,31 @@
         <link rel="stylesheet" href="<?= base_url() ?>css/normalize.css">
         <link rel="stylesheet" href="<?= base_url() ?>css/main.css">
 		<link rel="stylesheet" href="<?= base_url() ?>css/bootstrap.css">
-		<link rel="stylesheet" href="<?= base_url() ?>css/proyecto.css">
-		<style>
-			.hero-unit h3{
-				text-align: center;
-			}
-		</style>
+		<link rel="stylesheet" href="<?= base_url() ?>css/medios.css">
+
         <script src="<?= base_url() ?>js/vendor/modernizr-2.6.1.min.js"></script>
     </head>
-    <body class="body">
+    <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
 		<div class="container">
-			<div class="hero-unit">
-				<?php
-				echo "<h3>" . $proyecto['ptitle'] . "</h3> ";
-				echo $proyecto["pcue"] . "<br>";
-				echo "Fecha: " . date('d-m-Y H:i:s', $proyecto['pfec']) . "<br>";
-				?>
-				<p><img src="http://ctintelmex.com/<?= $proyecto['plog'] ?>"></p>
-				<?php
-				echo "<br>";
-				?>
-			</div>
+			<?php
+			echo "<div class='entrada'>";
+			echo "<h3>" . $entrada["etitle"] . "</h3>";
+			echo "" . $entrada["ecue"] . "";
+			//duda de MVC
+			$this->load->model('medios_model');
+			$autor = $this->medios_model->gauthor($entrada['eaut']);
+			echo "<p><small>Fecha: " . date('d-m-Y H:i:s', $entrada['efec']) . "</small></p>";
+			echo "<p><small>Autor: " . $autor['auser'] . " ~ " . $autor['aname'] . "</small></p>";
+			echo "</div>";
+			?>
 		</div>
 
 		<script src="<?= base_url() ?>js/vendor/jquery-1.8.0.min.js"></script>
-		<script src="<?= base_url() ?>js/vendor/masonry.min.js"></script>
 		<script src="<?= base_url() ?>js/plugins.js"></script>
 	</body>
 </html>

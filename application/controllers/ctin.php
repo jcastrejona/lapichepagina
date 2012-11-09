@@ -35,8 +35,8 @@ class Ctin extends CI_Controller {
 	}
 
 	public function blog() {
-		$this->load->model('entradas_model');
-		$data['entradas'] = $this->entradas_model->geinfo();
+		$this->load->model('medios_model');
+		$data["entradas"] = $this->medios_model->geinfo();
 		$this->load->view('entradas_view', $data);
 	}
 
@@ -53,10 +53,16 @@ class Ctin extends CI_Controller {
 		$this->load->view('matadero_view');
 	}
 
-	public function proyecto($id) {
+	public function proyecto() {
 		$this->load->model('proyectos_model');
 		$query["proyecto"] = $this->proyectos_model->gsinglep($this->uri->segment(3));
 		$this->load->view('proyecto_view', $query);
+	}
+	
+	public function entrada(){
+		$this->load->model("medios_model");
+		$data["entrada"] = $this->medios_model->gsinglee($this->uri->segment(3));
+		$this->load->view("entrada_view",$data);
 	}
 
 }
